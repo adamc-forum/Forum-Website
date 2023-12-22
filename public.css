@@ -3218,7 +3218,8 @@ section#homepage-hero #about_video {
             section#investors-hero figure.hero-image { width: calc(var(--col4-g) + var(--margin)); }
             section#investors-hero figure.fund-image { width: calc(var(--col1-g) + 2.5 * var(--margin)); margin-bottom: 1rem; }
             section#investors-hero figure.hero-image.above-the-fold { --animation-delay: 1.3s; }
-            section#investors-hero div#funds-container div.fund { margin-bottom: 1.5rem; margin-top: 0.5rem; display: -webkit-flex; display: flex; gap: 1rem; align-items: center; }
+            section#investors-hero div#funds-container div.fund { margin-bottom: 1.5rem; margin-top: 1rem; display: -webkit-flex; display: flex; gap: 1rem; align-items: center; }
+            section#investors-hero div#funds-container > a { color: var(--newred) }
             
             
             /** Mobile **********/ 
@@ -3228,7 +3229,7 @@ section#homepage-hero #about_video {
                     section#investors-hero h1 circle { bottom: -42px; right: 0; }
                     section#investors-hero div.flex { flex-direction: column; }
                     section#investors-hero p.lg { margin-bottom: 50px; }
-                    section#investors-hero div.para { order: 4; padding-left: var(--col1); }
+                    section#investors-hero div.para {order: 4;padding-left: var(--margin);}
                     section#investors-hero div.para p:not(:last-child) { margin-bottom: 30px; }
                     section#investors-hero figure.hero-image { height: calc((var(--col5-g) + var(--margin)) * .78); margin-left: auto; margin-right: var(---margin); margin-bottom: 30px; }
                     section#investors-hero figure.hero-image img { height: calc((var(--col5-g) + var(--margin)) * .78); }
@@ -3244,7 +3245,7 @@ section#homepage-hero #about_video {
                 @media all and (min-width: 768px) and (max-width: 1439px) {
                     section#investors-hero { padding-bottom: 100px; }
                     section#investors-hero h1 { margin-bottom: 80px; }
-                    section#investors-hero p.lg { margin-bottom: 50px; }
+                    section#investors-hero p.lg {margin-bottom: 1.5rem;}
                 }
 
             /** Tablet **********/
@@ -3254,7 +3255,7 @@ section#homepage-hero #about_video {
                     section#investors-hero h1 circle { bottom: -105px; right: 0; }
                     section#investors-hero div.flex { flex-wrap: wrap; }
                     section#investors-hero p.lg { padding-right: var(--col5); width: 100%; }
-                    section#investors-hero div.para { padding-left: var(--col1); width: var(--col6); }
+                    section#investors-hero div.para {margin-top: 1.5rem; padding-left: var(--col1); width: var(--col7);}
                     section#investors-hero div.para p:not(:last-child) { margin-bottom: 50px; }
                     section#investors-hero figure.hero-image { height: calc((var(--col5-g) + var(--margin)) * 1.3); position: relative; right: calc(var(--col1) * -1); }
                     section#investors-hero figure.hero-image img { height: calc((var(--col5-g) + var(--margin)) * 1.3); }
@@ -3262,13 +3263,13 @@ section#homepage-hero #about_video {
 
             /** Laptop & Desktop **********/
                 @media all and (min-width: 1023px) {
-                    section#investors-hero div.container { padding-left: calc(var(--margin) + var(--col1)); }
+                    section#investors-hero div.container { padding-left: calc(var(--margin) * 3); }
                     section#investors-hero strong.heading,
                     section#investors-hero h1 { padding-left: var(--col1); width: var(--col8); }
                     section#investors-hero h1 circle { bottom: 0; right: calc(var(--col1) * -1); }
                     section#investors-hero div.flex { flex-direction: column; min-height: calc((var(--col5-g) + var(--margin)) * 1.1); }
                     section#investors-hero p.lg { width: var(--col5); }
-                    section#investors-hero div.para { width: var(--col6); }
+                    section#investors-hero div.para {width: calc(var(--col6) + (var(--margin) * 3));}
                     section#investors-hero figure.hero-image { position: absolute; right: var(---margin); top: 0; }
                     section#investors-hero figure.hero-image img { height: calc((var(--col5-g) + var(--margin)) * 1.1); }
                 }

@@ -18,6 +18,7 @@
 ?>
 
 <script>
+    console.log("Hello");
     console.log(<?php echo json_encode($page); ?>);
 </script>
 
@@ -31,11 +32,11 @@
                 <p class="para lg fade-up" scroll="reveal"><?=$page['intro_section']['content_blocks']['headline']?></p>
                 <div id="funds-container" class="para sm fade-up" scroll="reveal">
                     <?php foreach ($page['funds_content']['fund'] as $fund): ?>
-                        <p class="para md"><?= htmlspecialchars($fund['name']) ?></p>
+                        <a class="para lg" href="<?= htmlspecialchars($fund['link']); ?>" target="_blank"><?= htmlspecialchars($fund['name']); ?></a>
                         <div class="fund">
                             <figure class="fund-image">
-                                <?php if ($fund['fund_icon']): ?>
-                                    <img <?= srcset($fund['fund_icon'], 'large') ?>
+                                <?php if ($fund['icon']): ?>
+                                    <img <?= srcset($fund['icon'], 'large') ?>
                                         sizes="(min-width: 1023px) 20px, (min-width: 768px) 20px, 20px"
                                         alt="<?= htmlspecialchars($fund['name']) ?>" class="cover" scroll="image">
                                 <?php endif; ?>
